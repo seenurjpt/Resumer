@@ -10,24 +10,18 @@ const Hero = () => {
     <div className="hero px-11 sm:p-10 bgcolor">
       <div className="mt-3">
         <p>
-          Your <span>Resume</span> 
+          Your <span>Resume</span>
         </p>
+        <p>Is Your Story,</p>
+        <p>Let Us Help You To Tell It.</p>
         <p>
-          Is Your Story,
+          <span>It's Free!</span>
         </p>
-        <p>
-          Let Us Help You To Tell It.
-        </p>
-        <p><span>It's Free!</span></p>
-<Link to="/resume">
-<Button
-          id="getstart-button"
-          disabled={false}
-          size="large"
-          // variant="text"
-        >
-          Get Started <ChevronRight />
-        </Button></Link>
+        <Link to="/resume">
+          <Button id="getstart-button" disabled={false} size="large">
+            Get Started <ChevronRight />
+          </Button>
+        </Link>
       </div>
 
       <div>
