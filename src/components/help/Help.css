@@ -22,7 +22,13 @@
 .help-section li{
     padding-top: 5px;
     text-align: justify;
+    letter-spacing: 2px;
 }
+/* .help-section ol p{
+    letter-spacing: 2px;
+    
+} */
+
 
 @media (max-width:450px) {
     .help-help{
