@@ -196,7 +196,7 @@ const Editor = (props) => {
       />
       <div className="row">
         <InputControl
-          label="Start Date"
+          label="Start Year"
           type="month"
           placeholder="Enter start date of this education"
           value={values.startDate}
@@ -206,7 +206,7 @@ const Editor = (props) => {
           }
         />
         <InputControl
-          label="End Date"
+          label="End Year"
           type="month"
           placeholder="Enter end date of this education"
           value={values.endDate}
