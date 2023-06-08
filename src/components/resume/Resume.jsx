@@ -32,8 +32,13 @@ const Resume =forwardRef((props,ref) => {
   const getFormattedDate = (value) => {
     if (!value) return "";
     const date = new Date(value);
-
     return `${date.getMonth() + 1}/${date.getFullYear()}`;
+  };
+  const getFormattedDate1 = (value) => {
+    if (!value) return "";
+    const date = new Date(value);
+
+    return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
   };
 
   const sectionDiv = {
@@ -66,8 +71,8 @@ const Resume =forwardRef((props,ref) => {
               {item.startDate && item.endDate ? (
                 <div className="content-date">
                   <Calendar />
-                  {getFormattedDate(item.startDate)} {"- "}
-                  {getFormattedDate(item.endDate)}
+                  {getFormattedDate1(item.startDate)} {"- "}
+                  {getFormattedDate1(item.endDate)}
                 </div>
               ) : (
                 " "
