@@ -21,6 +21,7 @@
 }
 .help-section li{
     padding-top: 5px;
+    text-align: justify;
 }
 
 @media (max-width:450px) {
