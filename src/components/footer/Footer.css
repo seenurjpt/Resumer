@@ -1,0 +1,11 @@
+footer{
+    height: 4rem;
+    background-color: var(--footer-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: aliceblue;
+}

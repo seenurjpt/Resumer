@@ -1,0 +1,152 @@
+.editor-section {
+    width: 54rem;
+    height: fit-content;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 5px var(--border-editor);
+    border-radius: 10px;
+}
+
+.editor-header {
+    border-bottom: 1px solid var(--border-editor);
+    display: flex;
+    gap: 2.5rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.editor-header p {
+    font-size: medium !important;
+}
+
+.editor-header p:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.editor-header .active {
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.editor-header .active p {
+    color: var(--primary-color);
+
+}
+
+.editor-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2.px;
+    padding: 30px;
+
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detail .row {
+    display: flex;
+    gap: 12px;
+}
+
+.detail .row>div {
+    flex: 1;
+}
+
+.detail .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.chips .new {
+    color: #239ce2;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.chip {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 8px 10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    background-color: #808080;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    cursor: default;
+}
+
+.chip p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #fff;
+}
+
+.chip svg {
+    color: #fff;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.chips .active {
+    background-color: var(--primary-color);
+}
+
+#new{
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+#sv-btn {
+    max-width: 5rem;
+    border-radius: 10px;
+    margin-top: 1.2rem;
+    box-shadow: none;
+    transform: none;
+    text-transform: capitalize;
+    
+}
+
+
+@media (max-width:450px) {
+    .editor-section{
+        width: 20rem;
+        padding-right: 10px;
+        box-shadow: 0px 0.5px 10px var(--border-editor);
+    }
+    .editor-header {
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 19rem;
+        cursor: pointer;
+    }
+    .editor-header-field{
+        border-bottom: 1px solid var(--border-editor);
+    }
+    .editor-body {
+        display: flex;
+        flex-direction: column;
+        gap: 2.px;
+        padding: 30px;
+    }
+}

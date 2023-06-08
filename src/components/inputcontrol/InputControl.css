@@ -1,0 +1,41 @@
+.inputcontrol-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label{
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+input{
+    border: 1px solid #cccccc;
+    background-color: var(--bg-color);
+    color: var(--text-color) !important;
+    outline: none;
+    padding: 8px 12px !important;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+input:hover{
+    border: 1px solid var(--text-color);
+    transition: ease-in-out 0.3s;
+}
+input:focus{
+    border: 1px solid var(--primary-color);
+}
+
+@media (max-width:450px) {
+    label{
+        font-size: 0.8rem !important;
+    }
+    input{
+        padding: 8px 5px !important;
+        font-size: 14px !important;
+        border-radius: 5px;
+        width: 8.5rem;
+        margin-bottom: 5px !important;
+    }
+}

@@ -1,0 +1,54 @@
+.body-section{
+    min-height: 100vh;
+}
+.rb{
+    padding-top: 6rem;
+}
+.rb p{
+    font-size:35px;
+}
+.colors-pallate{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 8px;
+}
+.color-active{
+    transform: scale(1.1);
+    box-shadow: 1px 8px 15px var(--secondary-color);
+}
+#ll{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+#pencil{
+    color: var(--text-color) !important;
+}
+#dnld-arr{
+    height: 18px !important;
+    width: 18px !important;
+}
+
+@media (max-width:450px) {
+    .rb{
+        padding-top: 4.5rem;
+    }
+    .rb p{
+        font-size:25px;
+    }
+    #ll{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    #d-b{
+        height: 2rem;
+        width: 8rem;
+    }
+    #pencil{
+        margin-top: -10px;
+    }
+    #dnld-arr{
+       display: none;
+    }
+}
